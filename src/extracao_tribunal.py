@@ -24,7 +24,7 @@ def insert_mssql(rows):
                       'Database=TCESP;'
                       'Trusted_Connection=no;'
                       'UID=PRONIM;'
-                      'PWD=PRO98NIM')
+                      'PWD=senha')
     cursor = conn.cursor()
     for row in rows: 
         cursor.execute("INSERT INTO Municipios (municipio, municipio_extenso) values(?,?)" , row["municipio"], row["municipio_extenso"])
